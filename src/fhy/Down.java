@@ -49,7 +49,7 @@ public class Down {
 			createFile(f);
 			FileOutputStream fs = new FileOutputStream(f);
 			BufferedOutputStream bo = new BufferedOutputStream(fs);
-			byte[] buffer = new byte[1204];
+			byte[] buffer = new byte[1024];
 			int len = 0;
 			while ((len = inStream.read(buffer)) != -1) {
 				bo.write(buffer, 0, len);
